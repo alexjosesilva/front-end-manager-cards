@@ -25,7 +25,7 @@ Certifique-se de ter o Node.js e o npm instalados em sua máquina.
 1. Clone o repositório do GitHub:
 
 ```
-git clone https://github.com/seu-usuario/seu-projeto.git
+git clone https://github.com/alexjosesilva/test-ZupInovation-FullStack.git
 ```
 
 ### Instalação
@@ -68,3 +68,11 @@ Este projeto está licenciado sob a Licença MIT - veja o arquivo LICENSE para d
 ```
 Este README.md fornece todas as informações necessárias para executar, contribuir e entender a licença do projeto. Certifique-se de ajustar as seções conforme necessário para o seu projeto específico.
 ```
+
+### Template do Projeto Front End
+
+- Cards
+![Listagem dos cards](assets/img/lista-card.png)
+
+- Modal
+![Listagem dos cards](assets/img/modal.png)
