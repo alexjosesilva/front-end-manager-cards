@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+//import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { BsModalService, BsModalRef } from 'ngx-bootstrap/modal';
 import { ModalComponent } from '../modal/modal.component';
 
 @Component({
@@ -18,10 +19,12 @@ export class CardComponent {
     { title: 'noticias', description: 'Descrição do Card 3' }
   ];
 
-  constructor(private modalService: NgbModal) {}
+  constructor(private modalService: BsModalService) {}
 
   openModal(card: any) {
-    const modalRef = this.modalService.open(ModalComponent);
-    modalRef.componentInstance.card = card;
+    const modalRef = this.modalService.show(ModalComponent);
+    if (modalRef.content) {
+      modalRef.content.card = card;
+    }
   }
 }

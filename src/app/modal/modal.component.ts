@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
-import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
-
+//import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
+import { BsModalService, BsModalRef } from 'ngx-bootstrap/modal';
 @Component({
   selector: 'app-modal',
   templateUrl: './modal.component.html',
@@ -14,7 +14,7 @@ export class ModalComponent {
   phoneNumber: string = '';
   email: string = '';
 
-  constructor(public activeModal: NgbActiveModal) {}
+  constructor(public activeModal: BsModalService) {}
 
   showPhoneInput() {
     this.showOptions = false;
@@ -30,6 +30,7 @@ export class ModalComponent {
     this.showOptions = true;
     this.showPhone = false;
     this.showEmail = false;
+    this.activeModal.hide();
   }
 
   requestContact() {
@@ -38,6 +39,6 @@ export class ModalComponent {
     } else if (this.email) {
       // Lógica para solicitar contato via e-mail
     }
-    this.activeModal.close();
+    this.activeModal.hide();
   }
 }
