@@ -1,0 +1,17 @@
+<div class="modal">
+    <h2>{{ card.title }}</h2>
+    <p>{{ card.description }}</p>
+    <div *ngIf="showOptions">
+      <button (click)="showPhoneInput()">Telefone</button>
+      <button (click)="showEmailInput()">E-mail</button>
+    </div>
+    <div *ngIf="showPhone">
+      <input type="text" [(ngModel)]="phoneNumber" placeholder="Telefone">
+    </div>
+    <div *ngIf="showEmail">
+      <input type="email" [(ngModel)]="email" placeholder="E-mail">
+    </div>
+    <button *ngIf="showOptions" (click)="closeModal()">Voltar</button>
+    <button *ngIf="!showOptions" (click)="requestContact()">Solicitar Contato</button>
+  </div>
+  
