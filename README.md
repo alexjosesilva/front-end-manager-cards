@@ -1,4 +1,4 @@
-# Meu Projeto Angular 13
+# Meu Projeto Angular 14.2.0
 
 Este é um projeto Angular simples que apresenta uma lista de cards com um modal para solicitar contato.
 
@@ -19,6 +19,7 @@ Certifique-se de ter o Node.js e o npm instalados em sua máquina.
 
 - [Node.js](https://nodejs.org/)
 - [npm](https://www.npmjs.com/)
+- [ngx-bootstrap](https://www.npmjs.com/package/ngx-bootstrap?activeTab=readme#usage--demo)
 
 ### Instalação
 

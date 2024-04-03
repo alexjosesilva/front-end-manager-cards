@@ -1,7 +1,9 @@
+
 <div class="cards-container">
   <div *ngFor="let card of cards" class="card">
-    <h2>{{ card.title }}</h2>
+    <h2><i [class]="card.icon"></i> {{ card.title }}</h2>
     <p>{{ card.description }}</p>
-    <button (click)="openModal(card)">Saiba Mais</button>
+    <hr>
+    <a href="#" (click)="openModal(card)" class="link-azul">Saiba Mais...</a>
   </div>
 </div>

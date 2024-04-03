@@ -1,12 +1,12 @@
 /* card.component.scss */
-
+@import '~@fortawesome/fontawesome-free/css/all.css';
 .card {
 
   width: calc(33.33% - 10px); /* Define a largura de cada card. Aqui, estamos usando 33.33% para ter três cards por linha */
   margin-bottom: 20px; /* Espaçamento inferior entre os cards */
   box-sizing: border-box; /* Garante que a largura inclua a largura da borda e do preenchimento */
 
-  background-color: #ffffff;
+  background-color: #f3d480;
   border: 1px solid #dddddd;
   border-radius: 4px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -29,4 +29,15 @@
   display: flex;
   flex-wrap: wrap; /* Permite que os cards quebrem para a próxima linha quando não houver espaço suficiente */
   justify-content: space-between; /* Distribui os cards igualmente ao longo do eixo principal */
+}
+
+.link-azul {
+  color: blue; /* Define a cor azul para o link */
+  text-decoration: none; /* Remove o sublinhado padrão do link */
+  display: block; /* Faz com que o link ocupe toda a largura disponível */
+  text-align: left; /* Alinha o texto à esquerda */
+}
+
+.link-azul:hover {
+  text-decoration: underline; /* Adiciona sublinhado quando o link é passado por cima */
 }

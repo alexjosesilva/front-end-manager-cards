@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
 //import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
-import { BsModalService, BsModalRef } from 'ngx-bootstrap/modal';
+import { BsModalService } from 'ngx-bootstrap/modal';
 @Component({
   selector: 'app-modal',
   templateUrl: './modal.component.html',
