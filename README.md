@@ -51,7 +51,7 @@ ng server
 
 Isso iniciará o servidor de desenvolvimento e abrirá o aplicativo no seu navegador padrão. Você também pode acessar o aplicativo em http://localhost:4200.
 
-### Contribuicao
+### Contribuição
 
 Se você quiser contribuir com este projeto, siga estas etapas:
 
@@ -72,7 +72,9 @@ Este README.md fornece todas as informações necessárias para executar, contri
 ### Template do Projeto Front End
 
 - Cards
+
 ![Listagem dos cards](src/assets/img/lista-cards.png)
 
 - Modal
+
 ![Tela Modal](src/assets/img/modal.png)
