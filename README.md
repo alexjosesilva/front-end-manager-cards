@@ -2,7 +2,7 @@
 
 Este é um projeto Angular simples que apresenta uma lista de cards com um modal para solicitar contato.
 
-## Entregaveis
+## Entregáveis
 - Cards
 - Modal
 - Test Unitarios
