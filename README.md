@@ -72,7 +72,7 @@ Este README.md fornece todas as informações necessárias para executar, contri
 ### Template do Projeto Front End
 
 - Cards
-![Listagem dos cards](assets/img/lista-card.png)
+![Listagem dos cards](assets/img/lista-cards.png)
 
 - Modal
-![Listagem dos cards](assets/img/modal.png)
+![Tela Modal](assets/img/modal.png)
