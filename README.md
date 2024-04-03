@@ -1,6 +1,13 @@
-# Meu Projeto Angular
+# Meu Projeto Angular 13
 
 Este é um projeto Angular simples que apresenta uma lista de cards com um modal para solicitar contato.
+
+## Entregaveis
+- Cards
+- Modal
+- Test Unitarios
+- DockerFile
+
 
 ## Como Executar
 
@@ -17,26 +24,30 @@ Certifique-se de ter o Node.js e o npm instalados em sua máquina.
 
 1. Clone o repositório do GitHub:
 
-```bash
+```
 git clone https://github.com/seu-usuario/seu-projeto.git
+```
 
 ### Instalação
 
 Navegue até o diretório do projeto:
 
-```bash
+```
 cd seu-projeto
+```
 
 Instale as dependências do projeto:
 
-```bash
+```
 npm install
+```
 
 ### Execução
 Após a instalação das dependências, você pode executar o projeto com o seguinte comando:
 
-```bash
+```
 ng server
+```
 
 Isso iniciará o servidor de desenvolvimento e abrirá o aplicativo no seu navegador padrão. Você também pode acessar o aplicativo em http://localhost:4200.
 
@@ -54,5 +65,6 @@ Se você quiser contribuir com este projeto, siga estas etapas:
 
 Este projeto está licenciado sob a Licença MIT - veja o arquivo LICENSE para detalhes.
 
-```bash
+```
 Este README.md fornece todas as informações necessárias para executar, contribuir e entender a licença do projeto. Certifique-se de ajustar as seções conforme necessário para o seu projeto específico.
+```
