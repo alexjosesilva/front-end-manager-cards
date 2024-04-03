@@ -19,23 +19,29 @@
     font-size: 1rem;
     margin-bottom: 15px;
   }
-  .contact-list{
-    list-style-type: none;
-
+ 
+  .contact-list li {
+    display: flex;
+    align-items: center;
   }
-  .contact-options {
-    margin-bottom: 15px;
-
-    label {
-      margin-right: 20px;
-
-      input[type="radio"] {
-        margin-right: 5px;
-      }
-    }
+  
+  .contact-list li i {
+    margin-right: 10px;
   }
+  
+  .contact-list li label {
+    flex-grow: 1;
+  }
+
+  .contact-list li {
+    margin-bottom: 10px; /* Adiciona espaço entre cada li */
+    
+  }
+
+
 
   button {
+    text-align: left;
     padding: 10px 20px;
     margin-right: 10px;
     border: 1px solid #000;

@@ -74,8 +74,8 @@ Este README.md fornece todas as informações necessárias para executar, contri
 
 - Cards
 
-![Listagem dos cards](src/assets/img/lista-cards.png)
+![Listagem dos cards](src/assets/img/tela-final-lista-cards.png)
 
 - Modal
 
-![Tela Modal](src/assets/img/modal.png)
+![Tela Modal](src/assets/img/tela-final-modal.png)
