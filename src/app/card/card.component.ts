@@ -1,9 +1,7 @@
 import { Component } from '@angular/core';
 //import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
-import { BsModalService, BsModalRef } from 'ngx-bootstrap/modal';
+import { BsModalService } from 'ngx-bootstrap/modal';
 import { ModalComponent } from '../modal/modal.component';
-
-
 
 @Component({
   selector: 'app-card',
@@ -11,6 +9,7 @@ import { ModalComponent } from '../modal/modal.component';
   styleUrls: ['./card.component.scss']
 })
 export class CardComponent {
+  //aqui fica a chamada para consumiro o api do backend
   cards = [
     { title: 'Conexão Itau', description: 'Descrição do Card 1' , icon: 'fas fa-school'},
     { title: 'tecnologia no PDV', description: 'Descrição do Card 2' , icon: 'fas fa-laptop' },
@@ -25,10 +24,11 @@ export class CardComponent {
 
   openModal(card: any) {
     const modalRef = this.modalService.show(ModalComponent);
-    if (modalRef.content) {
-      if (card !=null) {
+    
+    if (modalRef && modalRef.content) {    
       modalRef.content.card = card;
+    } else {
+      console.error('modalRef.content não está definido corretamente');
     }
   }
-}
 }

@@ -1,12 +1,14 @@
+@import '~@fortawesome/fontawesome-free/css/all.css';
 
-.modal {
-  background-color: #ffffff;
+.modal-container {
+  background-color: #fff;
   padding: 20px;
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   max-width: 400px;
   margin: auto;
-  text-align: center;
+  text-align: left;
+
 
   h2 {
     font-size: 1.5rem;
@@ -17,7 +19,10 @@
     font-size: 1rem;
     margin-bottom: 15px;
   }
+  .contact-list{
+    list-style-type: none;
 
+  }
   .contact-options {
     margin-bottom: 15px;
 
@@ -30,28 +35,26 @@
     }
   }
 
-  .buttons {
-    button {
-      padding: 10px 20px;
-      margin-right: 10px;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      font-size: 1rem;
+  button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    color: #000;
+    background-color: transparent;
+    transition: background-color 0.3s;
 
-      &:last-child {
+    &:last-child {
         margin-right: 0;
-      }
     }
 
-    button:nth-child(1) {
-      background-color: #ccc;
-      color: #fff;
-    }
-
-    button:nth-child(2) {
-      background-color: #007bff;
-      color: #fff;
+    &:hover {
+        background-color: #8B4513; /* Marron leve */
     }
   }
+
+
+  
 }
