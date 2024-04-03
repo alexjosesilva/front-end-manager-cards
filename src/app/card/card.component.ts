@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 //import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
-import { BsModalService, BsModalRef } from 'ngx-bootstrap/modal';
+import { BsModalService } from 'ngx-bootstrap/modal';
 import { ModalComponent } from '../modal/modal.component';
 
 @Component({
@@ -9,22 +9,26 @@ import { ModalComponent } from '../modal/modal.component';
   styleUrls: ['./card.component.scss']
 })
 export class CardComponent {
+  //aqui fica a chamada para consumiro o api do backend
   cards = [
-    { title: 'Conexão Itau', description: 'Descrição do Card 1' },
-    { title: 'tecnologia no PDV', description: 'Descrição do Card 2' },
-    { title: 'beneficios Ticket', description: 'Descrição do Card 3' },
-    { title: 'Omier sistema de gestão', description: 'Descrição do Card 1' },
-    { title: 'gestçao de RH ', description: 'Descrição do Card 2' },
-    { title: 'conteúdos', description: 'Descrição do Card 3' },
-    { title: 'noticias', description: 'Descrição do Card 3' }
+    { title: 'Conexão Itau', description: 'Emita NF-e, controle dseu caixa e estoque, conscilie recebiveis e mais' , icon: 'fas fa-school'},
+    { title: 'tecnologia no PDV', description: 'Automatize e integre tecnologias à gestão do ponto de venda' , icon: 'fas fa-laptop' },
+    { title: 'beneficios Ticket', description: 'Alimentação, Restaurante, Flex e Superflex, Conheça!' , icon: 'fas fa-money-bill-alt'},
+    { title: 'Omier sistema de gestão', description: 'Gerencie o financeiro, pedidos de venda, estoque e cobrança do seu negócio' , icon: 'fas fa-screwdriver'},
+    { title: 'gestão de RH ', description: 'Centralize a gestão do seu RH com Tecnologia', icon: 'fas fa-people-arrows' },
+    { title: 'conteúdos', description: 'Tenho acesso a conteúdo gratuito sobre empreendedorismo e gestão' , icon: 'fas fa-book-reader' },
+    { title: 'noticias', description: 'Os temas mais importantes de mercado pra alvancar seu negocios', icon: 'fas fa-newspaper' }
   ];
 
   constructor(private modalService: BsModalService) {}
 
   openModal(card: any) {
     const modalRef = this.modalService.show(ModalComponent);
-    if (modalRef.content) {
+    
+    if (modalRef && modalRef.content) {    
       modalRef.content.card = card;
+    } else {
+      console.error('modalRef.content não está definido corretamente');
     }
   }
 }

@@ -1,17 +1,41 @@
-<div class="modal">
-    <h2>{{ card.title }}</h2>
-    <p>{{ card.description }}</p>
-    <div *ngIf="showOptions">
-      <button (click)="showPhoneInput()">Telefone</button>
-      <button (click)="showEmailInput()">E-mail</button>
+
+<div class="modal-container  display: none;">
+    <h2>Como você prefere receber o nosso contato?</h2>
+    <p>Converse com nosso time de consultores e conheça as facilidades de tecnologia e gestão que cabem no seu negócio</p>
+    
+    <div >
+      <ul class="contact-list">
+        <li>
+          <i class="fas fa-phone"></i>
+          <label>Telefone </label>
+          <input type="radio" name="contactMethod" value="telefone">
+        </li>
+        <hr>
+        <li>
+          <i class="fas fa-envelope"></i>
+          <label>E-mail</label> 
+          <input type="radio" name="contactMethod" value="email">
+        </li>  
+        <hr>
+      </ul>
     </div>
-    <div *ngIf="showPhone">
-      <input type="text" [(ngModel)]="phoneNumber" placeholder="Telefone">
+    
+    <p> 
+      <i class="fas fa-sms"></i> 
+      <span> Atendimento em até 03 dias úteis.</span>
+    </p>
+
+    <p>
+      As informações forneceidas não alteram os dados cadastrados da sua conta
+      e podem ser compartilhados com empresas parceiras e poderão ser tratados
+      de acordo com a nossa Polítca de Privadidade disponível em nossos sites 
+      e aplicativos
+    </p>
+    
+    <div>
+      <button (click)="closeModal()">Voltar</button>
+      <button (click)="requestContact()">Solicitar Contato</button>
     </div>
-    <div *ngIf="showEmail">
-      <input type="email" [(ngModel)]="email" placeholder="E-mail">
-    </div>
-    <button *ngIf="showOptions" (click)="closeModal()">Voltar</button>
-    <button *ngIf="!showOptions" (click)="requestContact()">Solicitar Contato</button>
-  </div>
-  
+</div>
+
+
