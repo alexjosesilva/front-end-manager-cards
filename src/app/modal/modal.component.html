@@ -1,17 +1,23 @@
-<div class="modal">
-    <h2>{{ card.title }}</h2>
-    <p>{{ card.description }}</p>
-    <div *ngIf="showOptions">
-      <button (click)="showPhoneInput()">Telefone</button>
-      <button (click)="showEmailInput()">E-mail</button>
+<div class="modal-overlay">
+  <div class="modal">
+    <h2>Como você prefere receber o nosso contato?</h2>
+    <p>Converse com nosso time de consultores e conheça as facilidades de tecnologia e gestão que cabem no seu negócio</p>
+    
+    <div class="contact-options">
+      <label>
+        <input type="radio" name="contactMethod" value="telefone"> Telefone
+      </label>
+      <label>
+        <input type="radio" name="contactMethod" value="email"> E-mail
+      </label>
     </div>
-    <div *ngIf="showPhone">
-      <input type="text" [(ngModel)]="phoneNumber" placeholder="Telefone">
+    
+    <p>Atendimento em até 03 dias úteis.</p>
+    
+    <div class="buttons">
+      <button (click)="closeModal()">Voltar</button>
+      <button (click)="requestContact()">Solicitar Contato</button>
     </div>
-    <div *ngIf="showEmail">
-      <input type="email" [(ngModel)]="email" placeholder="E-mail">
-    </div>
-    <button *ngIf="showOptions" (click)="closeModal()">Voltar</button>
-    <button *ngIf="!showOptions" (click)="requestContact()">Solicitar Contato</button>
   </div>
-  
+</div>
+

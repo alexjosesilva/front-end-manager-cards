@@ -24,7 +24,9 @@ export class CardComponent {
   openModal(card: any) {
     const modalRef = this.modalService.show(ModalComponent);
     if (modalRef.content) {
+      if (card !=null) {
       modalRef.content.card = card;
     }
   }
+}
 }

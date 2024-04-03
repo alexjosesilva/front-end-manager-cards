@@ -1,22 +1,32 @@
 /* card.component.scss */
 
 .card {
-    background-color: #ffffff;
-    border: 1px solid #dddddd;
-    border-radius: 4px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    margin-bottom: 20px;
-  }
-  
-  .card-title {
-    font-size: 18px;
-    font-weight: bold;
-    color: #333333;
-  }
-  
-  .card-description {
-    font-size: 14px;
-    color: #666666;
-  }
-  
+
+  width: calc(33.33% - 10px); /* Define a largura de cada card. Aqui, estamos usando 33.33% para ter três cards por linha */
+  margin-bottom: 20px; /* Espaçamento inferior entre os cards */
+  box-sizing: border-box; /* Garante que a largura inclua a largura da borda e do preenchimento */
+
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333333;
+}
+
+.card-description {
+  font-size: 14px;
+  color: #666666;
+}
+
+.cards-container {
+  margin: 15px;
+  display: flex;
+  flex-wrap: wrap; /* Permite que os cards quebrem para a próxima linha quando não houver espaço suficiente */
+  justify-content: space-between; /* Distribui os cards igualmente ao longo do eixo principal */
+}

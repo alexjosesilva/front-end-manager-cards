@@ -1,7 +1,7 @@
-<div *ngFor="let card of cards">
-    <div class="card">
-      <h2>{{ card.title }}</h2>
-      <p>{{ card.description }}</p>
-      <button (click)="openModal(card)">Saiba Mais</button>
-    </div>
+<div class="cards-container">
+  <div *ngFor="let card of cards" class="card">
+    <h2>{{ card.title }}</h2>
+    <p>{{ card.description }}</p>
+    <button (click)="openModal(card)">Saiba Mais</button>
   </div>
+</div>
