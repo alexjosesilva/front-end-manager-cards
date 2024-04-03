@@ -1,27 +1,58 @@
-# TestZupInovationFullStack
+# Meu Projeto Angular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.11.
+Este é um projeto Angular simples que apresenta uma lista de cards com um modal para solicitar contato.
 
-## Development server
+## Como Executar
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Siga estas instruções para executar o projeto localmente em sua máquina.
 
-## Code scaffolding
+### Pré-requisitos
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Certifique-se de ter o Node.js e o npm instalados em sua máquina.
 
-## Build
+- [Node.js](https://nodejs.org/)
+- [npm](https://www.npmjs.com/)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### Instalação
 
-## Running unit tests
+1. Clone o repositório do GitHub:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+```bash
+git clone https://github.com/seu-usuario/seu-projeto.git
 
-## Running end-to-end tests
+### Instalação
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Navegue até o diretório do projeto:
 
-## Further help
+```bash
+cd seu-projeto
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Instale as dependências do projeto:
+
+```bash
+npm install
+
+### Execução
+Após a instalação das dependências, você pode executar o projeto com o seguinte comando:
+
+```bash
+ng server
+
+Isso iniciará o servidor de desenvolvimento e abrirá o aplicativo no seu navegador padrão. Você também pode acessar o aplicativo em http://localhost:4200.
+
+### Contribuicao
+
+Se você quiser contribuir com este projeto, siga estas etapas:
+
+1. Faça um fork do projeto
+2. Crie uma nova branch (git checkout -b feature/sua-feature)
+3. Faça commit de suas alterações (git commit -am 'Adicionar nova feature')
+4. Faça push para a branch (git push origin feature/sua-feature)
+5. Crie um novo Pull Request
+
+### Licença
+
+Este projeto está licenciado sob a Licença MIT - veja o arquivo LICENSE para detalhes.
+
+```bash
+Este README.md fornece todas as informações necessárias para executar, contribuir e entender a licença do projeto. Certifique-se de ajustar as seções conforme necessário para o seu projeto específico.
