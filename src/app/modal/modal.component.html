@@ -7,14 +7,25 @@
       <ul class="contact-list">
         <li>
           <i class="fas fa-phone"></i>
-          <label>Telefone </label>
-          <input type="radio" name="contactMethod" value="telefone">
+          <label>Telefone </label> 
+          <input type="radio" name="contactMethod" value="telefone" (change)="mostrarCampo('telefone')" [(ngModel)]="selectedMethod">
+        </li>
+        <li>
+          <div *ngIf="selectedMethod === 'telefone'" [(ngModel)]="phoneNumber">
+            <br> <label>Inserir o numero do Telefone</label>
+            <br> <input type="tel" name="telefone"  mask="(00) 0000-0000">
+          </div>
         </li>
         <hr>
         <li>
           <i class="fas fa-envelope"></i>
-          <label>E-mail</label> 
-          <input type="radio" name="contactMethod" value="email">
+          <label>E-mail</label>
+          <input type="radio" name="contactMethod" value="email" (change)="mostrarCampo('email')" [(ngModel)]="selectedMethod">
+          <li>
+            <div *ngIf="selectedMethod === 'email'" [(ngModel)]="email">
+              <br> <label>Inserir o email</label>
+              <br> <input type="email" name="email" mask="a*@a*.a*">
+            </div>
         </li>  
         <hr>
       </ul>

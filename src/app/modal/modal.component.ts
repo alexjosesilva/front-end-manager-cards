@@ -14,9 +14,13 @@ export class ModalComponent {
   showEmail = false;
   phoneNumber: string = '';
   email: string = '';
+  selectedMethod: string = ''; // Guarda o método selecionado (telefone ou email)
 
   constructor(public activeModal: BsModalRef) {}
 
+  mostrarCampo(metodo: string): void {
+    this.selectedMethod = metodo;
+  }
   showPhoneInput() {
     console.log("phoneInput");
     this.showOptions = false;
