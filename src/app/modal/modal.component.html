@@ -7,14 +7,25 @@
       <ul class="contact-list">
         <li>
           <i class="fas fa-phone"></i>
-          <label>Telefone </label>
-          <input type="radio" name="contactMethod" value="telefone">
+          <label>Telefone </label> 
+          <input type="radio" name="contactMethod" value="telefone" (change)="mostrarCampo('telefone')" [(ngModel)]="selectedMethod">
+        </li>
+        <li>
+          <div *ngIf="selectedMethod === 'telefone'" >
+             <label>Inserir o numero do Telefone</label>
+            <br> <input type="tel" name="telefone"  mask="(00) 0000-0000" [(ngModel)]="phoneNumber">
+          </div>
         </li>
         <hr>
         <li>
           <i class="fas fa-envelope"></i>
-          <label>E-mail</label> 
-          <input type="radio" name="contactMethod" value="email">
+          <label>E-mail</label>
+          <input type="radio" name="contactMethod" value="email" (change)="mostrarCampo('email')" [(ngModel)]="selectedMethod">
+          <li>
+            <div *ngIf="selectedMethod === 'email'" >
+              <label>Inserir o email</label>
+              <br> <input type="text" name="email" [(ngModel)]="email">
+            </div>
         </li>  
         <hr>
       </ul>
@@ -22,7 +33,7 @@
     
     <p> 
       <i class="fas fa-sms"></i> 
-      <span> Atendimento em até 03 dias úteis.</span>
+      <span> Atendimento em até <b>03 dias úteis.</b></span>
     </p>
 
     <p>
