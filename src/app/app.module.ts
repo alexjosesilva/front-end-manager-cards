@@ -9,12 +9,15 @@ import { CardComponent } from './card/card.component';
 import { ModalComponent } from './modal/modal.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ModalModule } from 'ngx-bootstrap/modal';
+import { NgxMaskModule } from 'ngx-mask';
+import { SucessoModalComponent } from './sucesso-modal/sucesso-modal.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CardComponent,
-    ModalComponent
+    ModalComponent,
+    SucessoModalComponent
   ],
   imports: [
     BrowserModule,
@@ -22,6 +25,7 @@ import { ModalModule } from 'ngx-bootstrap/modal';
     FormsModule,
     BrowserAnimationsModule,
     ModalModule.forRoot(),
+    NgxMaskModule.forRoot()
   
   ],
   providers: [],

@@ -11,9 +11,9 @@
           <input type="radio" name="contactMethod" value="telefone" (change)="mostrarCampo('telefone')" [(ngModel)]="selectedMethod">
         </li>
         <li>
-          <div *ngIf="selectedMethod === 'telefone'" [(ngModel)]="phoneNumber">
-            <br> <label>Inserir o numero do Telefone</label>
-            <br> <input type="tel" name="telefone"  mask="(00) 0000-0000">
+          <div *ngIf="selectedMethod === 'telefone'" >
+             <label>Inserir o numero do Telefone</label>
+            <br> <input type="tel" name="telefone"  mask="(00) 0000-0000" [(ngModel)]="phoneNumber">
           </div>
         </li>
         <hr>
@@ -22,9 +22,9 @@
           <label>E-mail</label>
           <input type="radio" name="contactMethod" value="email" (change)="mostrarCampo('email')" [(ngModel)]="selectedMethod">
           <li>
-            <div *ngIf="selectedMethod === 'email'" [(ngModel)]="email">
-              <br> <label>Inserir o email</label>
-              <br> <input type="email" name="email" mask="a*@a*.a*">
+            <div *ngIf="selectedMethod === 'email'" >
+              <label>Inserir o email</label>
+              <br> <input type="text" name="email" [(ngModel)]="email">
             </div>
         </li>  
         <hr>
@@ -33,7 +33,7 @@
     
     <p> 
       <i class="fas fa-sms"></i> 
-      <span> Atendimento em até 03 dias úteis.</span>
+      <span> Atendimento em até <b>03 dias úteis.</b></span>
     </p>
 
     <p>
