@@ -2,7 +2,7 @@
 
 Este é um projeto Angular simples que apresenta uma lista de cards com um modal para solicitar contato.
 
-## Entregaveis
+## Entregáveis
 - Cards
 - Modal
 - Test Unitarios
@@ -69,6 +69,28 @@ Este projeto está licenciado sob a Licença MIT - veja o arquivo LICENSE para d
 ```
 Este README.md fornece todas as informações necessárias para executar, contribuir e entender a licença do projeto. Certifique-se de ajustar as seções conforme necessário para o seu projeto específico.
 ```
+### Docker
+
+1. Construa a imagem Docker a partir do Dockerfile no diretório do projeto:
+   ```
+   docker build -t nome-da-imagem .
+   ```   
+2. Executar o contêiner Docker
+   ```
+   docker run -p 80:80 nome-da-imagem
+   ```
+3. Acesso o Projeto
+   ```
+   http://localhost
+   ```
+4. Para container: Listar
+   ```
+   docker ps
+   ```
+5. Stop Container
+   ```
+   docker stop ID-do-Contêiner
+   ```
 
 ### Template do Projeto Front End
 
@@ -77,7 +99,7 @@ Este README.md fornece todas as informações necessárias para executar, contri
 ![Listagem dos cards](src/assets/img/tela-final-lista-cards.png)
 
 - Modal
-
+ 
 ![Tela Modal](src/assets/img/tela-final-modal.png)
 
 - Preencher dados
@@ -87,3 +109,5 @@ Este README.md fornece todas as informações necessárias para executar, contri
 - Sucesso
 
 ![Tela Modal](src/assets/img/tela-sucesso-modal.png)
+
+
